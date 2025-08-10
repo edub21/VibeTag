@@ -1,0 +1,488 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-[#111818] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283939] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">VibeTag</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="index.html">Inicio</a>
+              <a class="text-white text-sm font-medium leading-normal" href="productos.html">Productos</a>
+              <a class="text-white text-sm font-medium leading-normal" href="acerca.html">Acerca de</a>
+              <a class="text-white text-sm font-medium leading-normal" href="demostracion.html">Demostración</a>
+              <a class="text-white text-sm font-medium leading-normal" href="contacto.html">Contacto</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3df5f5] text-[#111818] text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Comprar ahora</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-center justify-center p-4"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9IbCONLkk2nAtMI_F4dgyooP5s4dFMoNsyuzM_nZOnDtboNR32_rvJ7g9RHQejwGQFzh0acNzwgffbKWVibHAXyjPOTOptaPlpN6iuAR4yPdH0mUbQ1PuPBwf49tIf9-aSZm1tpqAKeq3mlhON3DVDqygJ0ew28gCPDhxFTgAjp8I_mC2Q2k0wbH1nanxy_4Y9ftBRFKJmV4FKUB6AkeldSI8he15OCNO7dhUdpK22orY1v3wGNNeIOpV4AZOL1vrpgAEAJPji5Q");'
+                >
+                  <div class="flex flex-col gap-2 text-center">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Un Toque. Posibilidades Infinitas.
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      VibeTag potencia identidad, automatización y comunicación NFC en un solo toque.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#3df5f5] text-[#111818] text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Explora el Futuro</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Quiénes Somos</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              VibeTag es una plataforma innovadora de etiquetas inteligentes NFC con sede en Quito, Ecuador. Nuestra misión es revolucionar la interacción con el mundo digital a través de soluciones NFC intuitivas y personalizadas. Imaginamos un futuro donde cada interacción sea sencilla, eficiente y única.
+            </p>
+            <div class="flex w-full grow bg-[#111818] @container p-4">
+              <div class="w-full gap-1 overflow-hidden bg-[#111818] @[480px]:gap-2 aspect-[3/2] rounded-lg flex">
+                <div
+                  class="w-full bg-center bg-no-repeat bg-cover aspect-auto rounded-none flex-1"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDfbIDRTSx8lbaYwPRQI7_AavePuQmLzHtmrAug2thFq19Gw17IHvLVbf7GorNRClK-a6fHZ5oxp5H5-oOHNd91WeMPGPssn3z_NO9_B-k43oazJLqx8g4oa552K2RbRaLZCPA_8EK82syjJymhqMs_DlFofhp8tZuQ3vwVdxk2Gxg75nKZQwdEq5S8y__apCGO4tePs5SdIBPOvBYarXZc-WJSYHvJZ5KQR7wtq8TNWHs3jgPYUoz2YN5Yg1QgkBpeja2xzMjyV3Q");'
+                ></div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Qué Vendemos</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              VibeTag ofrece una gama de etiquetas inteligentes NFC y wearables diseñados para identidad, automatización y comunicación. Nuestros productos incluyen etiquetas NFC versátiles, wearables elegantes como anillos, llaveros y colgantes, y herramientas programables para soluciones personalizadas de identificación y automatización. Experimenta conectividad instantánea, seguridad mejorada e interacciones personalizadas con VibeTag.
+            </p>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD0J65UlAtYtlcl7YTQW-5qOiR9vo8u7PhRsYotPMqa5Mmrnilk24_OPwENf8Y5nhWhBv0TNn73WLS6tHmMi3RkjXQpoFBvhfbZlf2lvfBXDfFzhw_Q6uOfTSvRm2b0TuwXR6Kv04MlwxdqAeQlFxMOp3sQXWcLqlg33IJWWjXxeWoVX718Ellfaf7at1aRNzfPMoD_RrOTgy-FbQTuq47wyt7rLUq30AcC7FjGKdKYXhVwpZwTaALQykOh2MQzfLSlcpl-9bcuBdo");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Etiquetas NFC Inteligentes</p>
+                  <p class="text-[#9cbaba] text-sm font-normal leading-normal">Etiquetas versátiles para diversas aplicaciones</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUb70nxuV64rrCQOV_MQJuofp_xChCvgG9XBCEyw-IVQcMAdk6me_Y4EadNIJUh-Z1JLu_iY0J0ULiayTi_s2tyx4mSwW4p1OtJZ1LAJqf4DV5tcmBG2Xpn5ObXpHAkWamD1R6GR9tyg6mDXdWRzBYo21Ib8o_kRP5E6G-GSVIxzcteGaBFvCibtanVmv-ymCVuufA42WoUUioOyZNlHEI_QJOQ-4epAz1uRzj9TuEj9raW0cq5hXlxxJaXQWczSKMBA_IAYASJog");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Wearables</p>
+                  <p class="text-[#9cbaba] text-sm font-normal leading-normal">Anillos, llaveros y colgantes elegantes</p>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("img/5.jpg");'
+                ></div>
+                <div>
+                  <p class="text-white text-base font-medium leading-normal">Herramientas Programables</p>
+                  <p class="text-[#9cbaba] text-sm font-normal leading-normal">Soluciones personalizadas de identificación y automatización</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Demostración en Vivo</h2>
+            <div class="p-4">
+              <div
+                class="relative flex items-center justify-center bg-white bg-cover bg-center aspect-video rounded-lg p-4"
+                style='background-image: url("img/Vibetag1.mp4");'
+              >
+                <button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/40 text-white">
+                  <div class="text-inherit" data-icon="Play" data-size="24px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Referencias de Clientes</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMsoQUD1C2TEOt3EEZVxAwPrvQBYxzovMicbxC5jL2yF0NdW7wdkC08uNRPnppgtGhqTJtXimbSdh7F1uFAfjFfJRMJILlhjRKvgtl-Y8WYnzXKxX6nXkF4qrnG7FzFw10ljYusJ_qyQtLlbI7Wny7G5Savwg7fyuwKcOTkbDQd0HuGYmMNVSaArZNcSxjHRe9ch1UDs2VNqb1hKpR4QByoRGios0BHhTFGvaHopw9HDRIc-vda4Ujz6K1fXxprahnhGSSntR8nyA");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Tech Solutions Inc.</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGEJLPxZlQ4Sadd3FbhaRadauplC2XoKNaQ2NtFBV4n6kBaOSleaMmG8UJF7wsG47TRBG9QgctB8Er03atbMLGNc9wde5gGCYi0EiwuN-Bk-aT1badPU-Cqzm0hNHgjA2MVvuDDNWQOdCu_t0Z-vwcqf3RiKcwFhNdpvnKTooH_VP8eI_NQmIrPwGPpWANfhHnizKznUwmI8tv17wukLyv9eORK9a1hiChPXD7D-HvxfNNzKaCHHUSKXSe_kqLyZkh8-YZKNbfFY4");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Global Retail Group</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBk0fxXhZLLK68baX3CRNFi6_bf9wQ8xEWVTLIQoQDkCkOBH_kA_VEfi-x8gjc_iJ3BQ_awp2JAtgkGOo4s7CC3kBub6JW0deDjUrK_BXCr0DMuGKCEDU7aQ1PQm6Yqg9Z-SGJOHwWRz0uhTR_7bF78c9YHlv79Ngu0XfPBVr1qjT8-BmAKpjFcI2XTx6Q84SRLjcJUODpSpprbQfflyI17jDQmu6bcy6bFvx99cYdl_28xcIJoCZkpJuaVrDEUBr6-9xsG9q1WmFA");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">EduTech Innovations</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQazxryeLMGeFbk4ZSfXwW3sMbghD6pfNZqE8EUmVfBRYXxLUYll_-rT9ylJ4rHaVg0cGiJs2NrdPPnAFXYU47nfHOWm7OO4JYoFuFCqSRLEwwFS2wpOJA3BV3CqiKWUwkzm7NBcDw8mnCMoIJXira1NMVOC0yUJlt4-d_LzHjpoauNGBnh4OitA0Qc0NtJwqFXVxlUkOv9cg81oM9dE8osIRLYzH6FWC2qsEKcX-AvzKEQ1S9K64ZEHWGPGULA5kwme4EWQsrF6w");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Health &amp; Wellness Co.</p>
+              </div>
+              <div
+                class="bg-cover bg-center flex flex-col gap-3 rounded-lg justify-end p-4 aspect-square"
+                style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.1) 100%, rgba(0, 0, 0, 0) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIvdvZlAv2UNvJ-6zyoimmaxq_8XjFmMrQc2ZPo5UXm4Gp7UwRiLuhV33VInCryMQQ-187pGl37yFV037vZuphJ0qfjJJxs2rWN-37BT3sXUzdFxJnwxCZrReW16h68MysWZOl1ZYeDo6HtPRfFF2x-jZBLuKOUbgwrncCjtWHFOeQGv26qDgrpZBeCU-nB1QtPgq5_yZ3xkMk4WQo5KHcXn49fkeJuRQyqtxY8kmGU0HGfb9zBvEoZPl9kEKasLskmaL6tBQdtTw");'
+              >
+                <p class="text-white text-base font-bold leading-tight w-4/5 line-clamp-2">Creative Agency</p>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Distribuidores</h2>
+            <div class="p-4 grid grid-cols-[20%_1fr] gap-x-6">
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b5454] py-5">
+                <p class="text-[#9cbaba] text-sm font-normal leading-normal">Tech Connect</p>
+                <p class="text-white text-sm font-normal leading-normal">Quito, Ecuador</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b5454] py-5">
+                <p class="text-[#9cbaba] text-sm font-normal leading-normal">Smart Solutions</p>
+                <p class="text-white text-sm font-normal leading-normal">Guayaquil, Ecuador</p>
+              </div>
+              <div class="col-span-2 grid grid-cols-subgrid border-t border-t-[#3b5454] py-5">
+                <p class="text-[#9cbaba] text-sm font-normal leading-normal">Digital Dynamics</p>
+                <p class="text-white text-sm font-normal leading-normal">Cuenca, Ecuador</p>
+              </div>
+            </div>
+            <div class="flex justify-center">
+              <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 max-w-[480px] justify-center">
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#283939] text-white text-sm font-bold leading-normal tracking-[0.015em] grow"
+                >
+                  <span class="truncate">Contactar Tech Connect</span>
+                </button>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#283939] text-white text-sm font-bold leading-normal tracking-[0.015em] grow"
+                >
+                  <span class="truncate">Contactar Smart Solutions</span>
+                </button>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Contacto y Ubicación</h2>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Nombre</p>
+                <input
+                  placeholder="Tu Nombre"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#283939] focus:border-none h-14 placeholder:text-[#9cbaba] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Correo electrónico</p>
+                <input
+                  placeholder="Tu Correo"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#283939] focus:border-none h-14 placeholder:text-[#9cbaba] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Asunto</p>
+                <input
+                  placeholder="Asunto"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#283939] focus:border-none h-14 placeholder:text-[#9cbaba] p-4 text-base font-normal leading-normal"
+                  value=""
+                />
+              </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+              <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-white text-base font-medium leading-normal pb-2">Mensaje</p>
+                <textarea
+                  placeholder="Tu Mensaje"
+                  class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-[#283939] focus:border-none min-h-36 placeholder:text-[#9cbaba] p-4 text-base font-normal leading-normal"
+                ></textarea>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3df5f5] text-[#111818] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Enviar Mensaje</span>
+              </button>
+            </div>
+            <div class="flex px-4 py-3">
+              <div
+                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg object-cover"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDo3iJ1kckgzOqVV1SyS9k1Klc89GQys_1bCvvJgzp4pzE8e2IC7TH95XuaBJlhM7HluMCj4t5CNsqRDUK_0bEs05ZXA5Kp1RcpzFoLDqFTWASMStcNK9G_zHftTFKDAwjwU8mY0B0_tMMwHkwqoyDNojJnxqhtvUJnYu55cHejI2KF5_m2uldoocWYZ8-ndxytpaUSYZxY7un9sj0dpFWyWtC98wqrmv_XRqRFP9EFnAmukyQD3eCznxd1UzSM8NnGnfA6JMNIGAg");'
+              ></div>
+            </div>
+            <div class="@container">
+              <div class="gap-2 px-4 flex flex-wrap justify-start">
+                <div class="flex flex-col items-center gap-2 bg-[#111818] py-2.5 text-center w-20">
+                  <div class="rounded-full bg-[#283939] p-2.5">
+                    <div class="text-white" data-icon="FacebookLogo" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-white text-sm font-medium leading-normal">Facebook</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#111818] py-2.5 text-center w-20">
+                  <div class="rounded-full bg-[#283939] p-2.5">
+                    <div class="text-white" data-icon="InstagramLogo" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-white text-sm font-medium leading-normal">Instagram</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#111818] py-2.5 text-center w-20">
+                  <div class="rounded-full bg-[#283939] p-2.5">
+                    <div class="text-white" data-icon="TiktokLogo" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M224,72a48.05,48.05,0,0,1-48-48,8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V156a20,20,0,1,1-28.57-18.08A8,8,0,0,0,96,130.69V88a8,8,0,0,0-9.4-7.88C50.91,86.48,24,119.1,24,156a76,76,0,0,0,152,0V116.29A103.25,103.25,0,0,0,224,128a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,39.64a87.19,87.19,0,0,1-43.33-16.15A8,8,0,0,0,160,102v54a60,60,0,0,1-120,0c0-25.9,16.64-49.13,40-57.6v27.67A36,36,0,1,0,136,156V32h24.5A64.14,64.14,0,0,0,216,87.5Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-white text-sm font-medium leading-normal">TikTok</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 bg-[#111818] py-2.5 text-center w-20">
+                  <div class="rounded-full bg-[#283939] p-2.5">
+                    <div class="text-white" data-icon="YoutubeLogo" data-size="20px" data-weight="regular">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill="currentColor" viewBox="0 0 256 256">
+                        <path
+                          d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="text-white text-sm font-medium leading-normal">YouTube</p>
+                </div>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Redes Sociales</h2>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Galería de Facebook</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCHF2VzF7w7Wr7Xssd6fAY_nzAk7A7fmByjiIAkHYKhBtnx3TQiRXwuDVyy8ulLeunecXOsVA7Q5HQdYR0CPsnnfEKWOp-92jPu9Bv5fbBD7-ns_y7YiuTYOnJlcACrA0HzyL7LY0YvIUQzn6iyi7GR0FXJZ1_L2SjaPCDlQ8KEc9G-A9xKoA5LYcyE8zBjNaswyj7xDYQ9GY3MqQT0Q-72mpRfyUJ8fxreSjsGNzG-j9ZZ6XvtTobawvjQTqZqsAcQl-0j8FO8Jf0");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGvLschFE441AVZHt3Z8JutHNPwE54O8HfhUFcdYWV3mcr9xjQAyQKjoATMWVaPmZn6Fc5nxaRutCksCSxKMDPLduyagz63Ej-vU1xkTnk_v7SZXS7GCfcNbKshubQItKgHsfMGE4oU-TTc4ZaH3WNNzj2NP-7EzYIx59Dmi7DKSqfAoyHF-Jx0QJvOeTHgaKmyIXBIaXyXwJO0koYEdxmA27amaKB9AbeA5ewirLQTL7WN84GNJc-JMCYrQ8HePh6OkzGhe4ejwQ");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAu6t3IYdGR53kIZ8MxPXWk-hyqTU_ZQO2eiPgNLKBOWXifDhSfrjBGqZbETEDGLKA5g7UxriymOU9YkU0cGMhjRUGTEoJq1a-Ao0s37vBc_IrUopgUytvcAhv8Ths6IXanXvYnbHR8vbXLqRo-O-q5-sQ8X5rADrD4EI-t41W2sYFqLyX2GCCdyL0Zsm0bxuc5dLcZzask2RYP2a1k-DEktDdpytjghK8knc7PVhcbQa-iRCemtuLjyAcl-NlxL5KW8IWBYFDXDrc");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuASrNt3JjzVmU_f8aA5Ez4pgc_gDXAuIDmr8UEGDQUF4p7vlR_rI-CgzDjVOk0uGs22ZqHzDLeZfZNCatJ-SVBbzmqacY_NxDTJwlYLB8KC7gwWk2v0RFjDYrzXeP8P_-btT572OYe7dyV_LALQ8DtE-NvFnfty62-EFy8f4xqANruhu3E9x_ESJgqUIaV5XDemlA4tnHUEKAZJovXRptwkguC5cUwU23rtqD9CiXCVQrmzuVEm4nnNtL2Ljzu4qd2k6Dpiga21oLU");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVIZs0Gr6BLq5aLEuWDlBlg1RUGnzCf4qdlEKtj2EjSuqlPNafGJKGryBaYuGmWirPZusa3E2cHlAXe8fQexPx0aow_8q7-pbxuol2ioXE-Qzk55VctXVVPVtmMI9agspWxrFOMQRvA_jWwPjjScz06Yg3zx5VO8Mqzs18s13Oow_Ab35r6kxOO2j52qgWAmGPZ-_M7STqf4PmH8VfjqN7ZD29uXWdXKyHaWyWkVJz5-DNj-SbfcNdANaSu7rZg8y4H4ulCywMrxI");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCH8t5Iq41sJn6O4JJ6H2191qB8i40mfedgh3Ni7HZUn5qL-YtBSRkyaN4XcVHHMscG0RntYtwbzh9eCbSLDKbKQiHzUPInmYfLw3T5K8HNFmDZlwYGt_bnU_PY7jgl5qgS-pz4GizwPcTzE_ZwakBzlFL19nM5n6bwNFgwc-pynubgOr7Awo5iMh26-thaJV-w8I2qmO7IGd9uizj5QhH68EVIv__Kwx7vhRo-3ODkOKg-de0GR_Sc79PoKHgv9P9-kGf2f-IjyE");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Galería de Instagram</h3>
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuClvYmF9jKrAd1m7BeQQlyDQ9I0h-QiarCBbnC6jQTd0ChoGx-wY4Z5Ae6YIE4Eaak2aG7If0E3Vmmh_Kz9LZ1B-T1euLwBgxcL-J7ossmHHm-GyaUjId-3YB62eSiGY7zs84IwNDkkViT2kYDJ4YWmnkV_biDoWtFCtBLPfqdBLll1v2bow4mVjB_b7lk7H7xpJKrUiYtlWtFPhwu6FWMIBjRfTeOG3vtBplzg6UCY2n15GI9KW3514lWQ1emfXzlIlM-afjhd7a0");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4YmbmgzgmmtQVTADKar6bbsyHzeVILlPj8ysMJpvzAku1bsH_SHAwlbiUuV87KwsT1ZgLWxsF4fRVdxglBmSrGbZpEZlSQTWwpJRrAgaS3rOCtWX2A_z7uNwXa-AgNfErrhKVrZwGA6q4KTi6tj9LegFBdQwApVnnNdWuSkN8DfYDcDU6WLsC3vVwA5NNxg8H5_00-fAblM_PhYt-Eeh84-C1iw0p3tsGx8m6ovdFltqJ3YnpYEVW-l44irsOrr9gO4rIH9uGJF4");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA7I8qiaQN7Xzgx81U46jNSg0eH6YW3HHaHg3uhHlfXzGVBjDjNxQ3nmhwxPKaVATcYOtgj2DhKQGzHEXudT6xDPxLIaWPvv9l3TOR2P87rGuSAKkutcD2wDN3dj-vA3l3Q-9B-WUOVb6sbewC0IvZhFdByPwOwggtemLkdijGyF-gskaFIYAdT9XEVf-0J3abb9mJvHQXtEjgPo1_no4osoMaemlmBL0CpoQuxKCEHhDUA3H_SXq0M-a-jjZGvB7iKIBcN4jvXx5o");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB22pa67x3OxsTB4ivvkvdQk7Zd25PHRg0pRS0eu1t4_XfQGmQUUOPCU9sC1JJnzdTshrgqw5-rppyCzUQhc0HlGNAQU6R7LFKK1aX6sYPqmni5oef7ce_G_gCDYWIZxV1F41OnR_ot1UlXsRQAug6eW6fzLHdCR_0nvSbd2iwC8TV_YKAgkXT_DNwtpOcAaUyoceFT8-oftsqiBUk1kA_n1MlMfc3joYKNdIshM21tmGa4msT3BJgrBq2Krpyrkce5EaFGz8JzF0o");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVIZs0Gr6BLq5aLEuWDlBlg1RUGnzCf4qdlEKtj2EjSuqlPNafGJKGryBaYuGmWirPZusa3E2cHlAXe8fQexPx0aow_8q7-pbxuol2ioXE-Qzk55VctXVVPVtmMI9agspWxrFOMQRvA_jWwPjjScz06Yg3zx5VO8Mqzs18s13Oow_Ab35r6kxOO2j52qgWAmGPZ-_M7STqf4PmH8VfjqN7ZD29uXWdXKyHaWyWkVJz5-DNj-SbfcNdANaSu7rZg8y4H4ulCywMrxI");'
+                ></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div
+                  class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg"
+                  style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDCH8t5Iq41sJn6O4JJ6H2191qB8i40mfedgh3Ni7HZUn5qL-YtBSRkyaN4XcVHHMscG0RntYtwbzh9eCbSLDKbKQiHzUPInmYfLw3T5K8HNFmDZlwYGt_bnU_PY7jgl5qgS-pz4GizwPcTzE_ZwakBzlFL19nM5n6bwNFgwc-pynubgOr7Awo5iMh26-thaJV-w8I2qmO7IGd9uizj5QhH68EVIv__Kwx7vhRo-3ODkOKg-de0GR_Sc79PoKHgv9P9-kGf2f-IjyE");'
+                ></div>
+              </div>
+            </div>
+            <h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4">Video TikTok/IG</h3>
+            <div class="p-4">
+              <div
+                class="relative flex items-center justify-center bg-white bg-cover bg-center aspect-video rounded-lg p-4"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4TPQHUli6TwRqwcbuUrWrCcxBghu0lgUbvNL7ZX0XuQ9wYbGl50Od71jlicK7hU9U_PciiO_STGNl4KU3rIckzYxj0SdiXRLbZQLTahh5VIUbHoaGtcwKLzWJVrXYV5GgnuUTcS-E2eWv_DoOMyuFIXYnl-xM1qC33coA_VIrWkA_0XpriE_f7rh4j_DdRe2q_nwXsnD_aumoIQa2ZUd4aVnYLYI8Pztj541lwpCisEZ99jmBe5CzyDGUh7qpGbPllGENhWiXpCc");'
+              >
+                <button class="flex shrink-0 items-center justify-center rounded-full size-16 bg-black/40 text-white">
+                  <div class="text-inherit" data-icon="Play" data-size="24px" data-weight="fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M240,128a15.74,15.74,0,0,1-7.6,13.51L88.32,229.65a16,16,0,0,1-16.2.3A15.86,15.86,0,0,1,64,216.13V39.87a15.86,15.86,0,0,1,8.12-13.82,16,16,0,0,1,16.2.3L232.4,114.49A15.74,15.74,0,0,1,240,128Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Clientes y Pago</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Aceptamos varios métodos de pago, incluyendo Visa, Mastercard, PayPal y opciones locales como transferencias bancarias en Ecuador. Nuestra función de carrito de compras permite seleccionar productos y pagar fácilmente.
+            </p>
+            <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Tienda y Pago</h2>
+            <p class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4">
+              Explora nuestros productos, agrégalos al carrito y realiza tu compra de forma segura. Ofrecemos variaciones de productos y precios claros. Nuestra interfaz de pago es responsiva y garantiza una experiencia fluida en cualquier dispositivo.
+            </p>
+            <div class="flex px-4 py-3 justify-start">
+              <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#3df5f5] text-[#111818] text-sm font-bold leading-normal tracking-[0.015em]"
+              >
+                <span class="truncate">Ver Productos</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#9cbaba] text-base font-normal leading-normal min-w-40" href="#">Política de Privacidad</a>
+                <a class="text-[#9cbaba] text-base font-normal leading-normal min-w-40" href="#">Términos de Uso</a>
+              </div>
+              <div class="flex flex-wrap justify-center gap-4">
+                <a href="#">
+                  <div class="text-[#9cbaba]" data-icon="FacebookLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9cbaba]" data-icon="InstagramLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9cbaba]" data-icon="TiktokLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M224,72a48.05,48.05,0,0,1-48-48,8,8,0,0,0-8-8H128a8,8,0,0,0-8,8V156a20,20,0,1,1-28.57-18.08A8,8,0,0,0,96,130.69V88a8,8,0,0,0-9.4-7.88C50.91,86.48,24,119.1,24,156a76,76,0,0,0,152,0V116.29A103.25,103.25,0,0,0,224,128a8,8,0,0,0,8-8V80A8,8,0,0,0,224,72Zm-8,39.64a87.19,87.19,0,0,1-43.33-16.15A8,8,0,0,0,160,102v54a60,60,0,0,1-120,0c0-25.9,16.64-49.13,40-57.6v27.67A36,36,0,1,0,136,156V32h24.5A64.14,64.14,0,0,0,216,87.5Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="text-[#9cbaba]" data-icon="YoutubeLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9cbaba] text-base font-normal leading-normal">© 2025 VibeTag</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+                  <div class="text-[#9cbaba]" data-icon="YoutubeLogo" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+              <p class="text-[#9cbaba] text-base font-normal leading-normal">© 2025 VibeTag</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
